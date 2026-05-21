@@ -13,11 +13,7 @@ private:
 public:
     Combate();
 
-    void iniciarPelea(
-        Aliado aliados[],
-        int cantidadAliados,
-        Enemigo &enemigo
-    );
+    void iniciarPelea(Aliado aliados[],int cantidadAliados,Enemigo &enemigo);
 
 };
 
