@@ -13,9 +13,7 @@ void Combate::iniciarPelea(
 
     while(enemigo.estaVivo()) {
 
-        cout << "\n TURNO "
-             << turnos
-             << " \n";
+        cout << "\n TURNO " << turnos << " \n";
 
         for(int i = 0; i < cantidadAliados; i++) {
 
