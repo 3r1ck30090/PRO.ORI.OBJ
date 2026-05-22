@@ -1,5 +1,4 @@
 #include "Combate.h"
-
 Combate::Combate() {
     turnos = 1;
     estado = true;
