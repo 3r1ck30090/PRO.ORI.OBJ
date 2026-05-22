@@ -5,11 +5,7 @@ Combate::Combate() {
     estado = true;
 }
 
-void Combate::iniciarPelea(
-    Aliado aliados[],
-    int cantidadAliados,
-    Enemigo &enemigo
-) {
+void Combate::iniciarPelea(Aliado aliados[],int cantidadAliados,Enemigo &enemigo) {
 
     while(enemigo.estaVivo()) {
 
@@ -27,7 +23,6 @@ void Combate::iniciarPelea(
                 break;
             }
         }
-
         turnos++;
     }
 }
