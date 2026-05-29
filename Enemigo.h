@@ -8,6 +8,7 @@ class Enemigo : public Personaje {
 public:
     Enemigo(string n, int v, int a, string e);
 
+    void atacar(Personaje &objetivo);
 };
 
 #endif
