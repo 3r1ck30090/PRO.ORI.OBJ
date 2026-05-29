@@ -17,7 +17,9 @@ protected:
 public:
     Personaje(string n, int v, int a, string e);
 
-    void atacar(Personaje &objetivo);
+    virtual void atacar(Personaje &objetivo);
+
+    void atacar(Personaje &objetivo, int bonus);
 
     void recibirDanio(int danio);
 
