@@ -37,3 +37,11 @@ void Personaje::recibirDanio(int danio) {
 bool Personaje::estaVivo() {
     return vivo;
 }
+
+string Personaje::getNombre() {
+    return nombre;
+}
+
+int Personaje::getVida() {
+    return vida;
+}
