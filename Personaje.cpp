@@ -14,6 +14,13 @@ void Personaje::atacar(Personaje &objetivo) {
     objetivo.recibirDanio(ataque);
 }
 
+void Personaje::atacar(Personaje &objetivo, int bonus) {
+
+    cout << nombre << " usa ataque potenciado!\n";
+
+    objetivo.recibirDanio(ataque + bonus);
+}
+
 void Personaje::recibirDanio(int danio) {
     vida = vida - danio;
 
@@ -29,12 +36,4 @@ void Personaje::recibirDanio(int danio) {
 
 bool Personaje::estaVivo() {
     return vivo;
-}
-
-string Personaje::getNombre() {
-    return nombre;
-}
-
-int Personaje::getVida() {
-    return vida;
 }
