@@ -8,25 +8,12 @@ Personaje::Personaje(string n, int v, int a, string e) {
     vivo = true;
 }
 
-void Personaje::atacar(Personaje &objetivo) {
-    cout << nombre << " ataca a " << objetivo.getNombre() << "!\n";
-
-    objetivo.recibirDanio(ataque);
-}
-
-void Personaje::atacar(Personaje &objetivo, int bonus) {
-
-    cout << nombre << " usa ataque potenciado!\n";
-
-    objetivo.recibirDanio(ataque + bonus);
-}
-
 void Personaje::recibirDanio(int danio) {
     vida = vida - danio;
 
-    cout << nombre << " recibe " << danio << " \n";
+    cout << nombre << " recibe " << danio << "\n";
 
-    if(vida <= 0) {
+    if (vida <= 0) {
         vida = 0;
         vivo = false;
 
